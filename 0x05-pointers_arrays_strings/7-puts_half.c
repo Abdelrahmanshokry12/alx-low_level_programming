@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * puts2 - prints every character of a string
+ * puts_half - prints every character of a string
  * Params:
  *  @str: string parameter input
  * Return: None
 */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int i;
 
