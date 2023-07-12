@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -7,6 +6,7 @@
  * @height: aaa
  * Return: On success 0
 */
+
 int **alloc_grid(int width, int height)
 {
 	int **grid;
@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 			free(grid[j]);
 			free(grid);
 			return (NULL);
-		}
+	}
 
 		for (j = 0; j < width; j++)
 			grid[i][j] = 0;
