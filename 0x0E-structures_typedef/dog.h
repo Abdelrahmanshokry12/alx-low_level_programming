@@ -7,10 +7,9 @@
  * @age: The age of the dog
  * @owner: The name of the dog's owner
  *
- * This struct contains information about a dog, including its name, age, and
  * owner. It is typedef'd as `dog_t` for convenience.
 */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
