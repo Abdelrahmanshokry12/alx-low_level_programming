@@ -22,16 +22,19 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	op_func = get_op_func(argv[2]);
 
-	if (op_func == NULL)
+	op_func = get_op_func(argv[2]);
+	if (!op_func)
 	{
-		printf("Error: Operator '%s' not supported\n", argv[2]);
-		return (98);
+		printf("Error\n"), exit(99);
+	}
+
+	if (!b || (argv[2][0] == '/' && b == 0))
+	{
+		printf("Error\n"), exit(100);
 	}
 
 	result = op_func(a, b);
 	printf("%d\n", result);
-
 	return (0);
 }
