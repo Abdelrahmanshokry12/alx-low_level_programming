@@ -16,22 +16,18 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		printf("Error: Usage: %s <number of bytes to print>\n", argv[0]);
+		printf("Error\n);
 		exit(1);
 	}
-
 	b = atoi(argv[1]);
-
 	if (b < 0)
 	{
-		printf("Error: Number of bytes must be positive\n");
+		printf("Error\n");
 		exit(2);
 	}
-
 	while (b--)
 	{
 		printf("%02hhx%s", *p++, b ? " " : "\n");
 	}
-
 	return (0);
 }
